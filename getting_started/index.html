@@ -158,7 +158,7 @@
 <p><img alt="hardware" src="../img/hardware.png" /></p>
 <p>硬件连接如图所示:</p>
 <ul>
-<li><code>TELEM 2</code>: 默认作为控制台<strong>Console</strong>的输出，默认波特率<em>57600</em>。如果在<strong>Mavlink Console</strong>中输入任意字符，则<strong>Console</strong>将被自动映射到<strong>Mavlink Console</strong>上。</li>
+<li><code>TELEM 2</code>: 默认作为控制台<strong>Console</strong>的输出，默认波特率<em>57600</em>。如果在<strong>Mavlink Console</strong>中输入任意字符，则控制台将被自动映射到<strong>Mavlink Console</strong>上。</li>
 <li><code>TELEM 1</code>: 默认作为<strong>Mavlink</strong>的输出口，默认波特率<em>57600</em>。如果<strong>USB</strong>连接的话，则<strong>Mavlink</strong>则自动换到到<strong>USB</strong>设备上输出。</li>
 <li><code>GPS</code>: 连接GPS模块，默认波特率<em>9600</em>。</li>
 <li><code>RC</code>: 连接遥控器的<em>PPM</em>信号,目前最多支持8路PPM信号。</li>
@@ -205,7 +205,7 @@ scons -j4
 </li>
 </ul>
 <p><img alt="qgc_download" src="../img/qgc_download.png" /></p>
-<p>固件下载成功后，可以使用串口(<strong>TELEM 2, baudrate: 57600</strong>)或者QGC的<strong>Mavlink Console</strong>连接控制台(console)，如下图所示为飞控开机打印的信息：</p>
+<p>固件下载成功后，可以使用串口(<strong>TELEM 2, baudrate: 57600</strong>)或者QGC的<strong>Mavlink Console</strong>连接控制台，如下图所示为飞控开机打印的信息：</p>
 <p><img alt="console" src="../img/console.png" /></p>
 <p>除此之外，还可以在VS Code中运行<code>fmt_fmu/target/pixhawk/mavlink_shell.py</code>脚本来连接console。</p>
 <h3 id="fmt-io_1">下载FMT IO固件</h3>

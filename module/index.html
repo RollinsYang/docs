@@ -152,8 +152,7 @@
             <div class="section">
               
                 <h1 id="_1">组件</h1>
-<p>FMT提供了功能强大的系统组件，各种组件提供了系统的大部分功能实现。由于硬件虚拟层（HAL）的引入，各个组件模块可以做到跟硬件平台无关，支持在各个不用的硬件平台上使用。用户只需要根据当前的硬件平台资源和驱动，来决定要使用哪些组件模块。
-这里，我们将介绍FMT中常用的一些组件。</p>
+<p>FMT提供了功能强大的系统组件，各种组件提供了系统的大部分功能实现。由于硬件虚拟层（HAL）的引入，各个组件模块可以做到跟硬件平台无关，支持在各个不用的硬件平台上使用。用户只需要根据当前的硬件平台资源和驱动，来决定要使用哪些组件模块。这里，我们将介绍FMT中常用的一些组件。</p>
 <h2 id="console">Console控制台</h2>
 <p>控制台组件供了控制台的输入/输出功能，主要用于调试信息的打印以及命令行的交互功能。console可以被映射到不同的设备上，如串口，USB等。</p>
 <h3 id="_2">设置控制台设备</h3>
@@ -161,8 +160,7 @@
 <pre><code class="c">fmt_err console_set_device(char* dev_name);
 </code></pre>
 
-<p>console默认使用<code>serial1</code>设备 (TELEM2接口)。当连接QGC地面站，并在<code>Mavlink Console</code>输入任意字符，console将被自动切换到<code>mav_console</code>设备上，如下图所示。</p>
-<p><img alt="mav_console" src="../img/mav_console.png" /></p>
+<p>console默认使用<code>serial1</code>设备 (TELEM2接口)。当连接QGC地面站，并在<code>Mavlink Console</code>输入任意字符，console将被自动切换到<code>mav_console</code>设备上。</p>
 <p>当前console支持的设备名称如下：
 - <code>serialx</code>： 标准串口设备，默认使用<code>serial1</code>
 - <code>mav_console</code>: 基于mavlink协议的虚拟控制台设备。它将console的输入/输出数据封装为<code>MAVLINK_MSG_ID_SERIAL_CONTROL</code>的包，再通过串口或者USB进行发送，以支持QGC的<code>Mavlink Console</code>功能。</p>

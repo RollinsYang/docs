@@ -146,10 +146,10 @@
             <div class="section">
               
                 <h1 id="fmt">FMT固件</h1>
-<p>FMT Firmware 是用C语言编写的飞控嵌入式代码。代码风格简洁，易于使用。采用高度模块化的结构设计，可以方便地移植到不同的硬件平台。</p>
-<p>FMT Firmware 基于 Pixhawk V2 的硬件平台进行开发 (未来将支持到更多硬件平台上)，包括FMU (stm32F427) 和 IO (stm32F103) 两个部分的固件。固件支持Mavlink 1.0/2.0，所以可以支持主流的地面站，如QGC，Mission Planner 等。除此之外，FMT与其它主要开源飞控的主要区别之一在于其完全支持 MBD 的开发模式，可以更快速的开发和验证您的算法模型。</p>
+<p>FMT Firmware 是用C语言编写的飞控嵌入式代码。代码风格简洁高效，且易于使用。采用高度模块化的结构设计，可以方便地移植到不同的硬件平台。</p>
+<p>FMT Firmware 基于 Pixhawk V2 的硬件平台进行开发 (未来将支持到更多硬件平台上)，包括FMU (stm32F427) 和 IO (stm32F103) 两个部分的固件。固件支持Mavlink 1.0/2.0，所以可以支持主流的地面站，如QGC，Mission Planner 等。</p>
 <h2 id="fmt-firmware">FMT Firmware架构</h2>
-<p>FMT Firmware 采用<strong>分层设计模式，使得层与层，模块与模块之间去耦合，各个模块可以单独加载或删除</strong>。 FMT Firmware 架构如下图所示。</p>
+<p>FMT Firmware 为飞控的嵌入式部分，采用<strong>分层设计模式</strong>，层与层，模块与模块之间松耦合，易于单独添加/删除模各个模块。 FMT Firmware 架构如下图所示。</p>
 <p><img alt="fmt_structure" src="../img/fmt_structure.png" /></p>
 <p>它具体包括以下部分：</p>
 <ul>
